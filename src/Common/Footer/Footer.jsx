@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { CiInboxOut } from "react-icons/ci";
 
 const Footer = () => {
     return (
@@ -6,7 +7,7 @@ const Footer = () => {
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
                 {/* Logo & Mission */}
                 <div>
-                    <img src="/DigitalCrafted_Logo_HR_Dark.png" alt="DigitalCrafted Logo" className="h-12 mb-4" />
+                    <img src="/DigitalCrafted_Logo_Dark.png" alt="DigitalCrafted Logo" className="h-24" />
                     <p className="text-sm text-gray-300">
                         Empowering businesses with powerful digital content and growth strategies.
                     </p>
@@ -45,7 +46,7 @@ const Footer = () => {
                             type="submit"
                             className="bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary/90 transition"
                         >
-                            Subscribe
+                            <CiInboxOut className="font-bold text-xl"/>
                         </button>
                     </form>
                 </div>
