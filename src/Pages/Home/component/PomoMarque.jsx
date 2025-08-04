@@ -13,7 +13,7 @@ const items = [
 
 const PromoMarque = () => {
   return (
-    <section className="py-14 md:py-20 ">
+    <section className="pb-14 md:pb-20 pt-3">
       <Marquee gradient={false} speed={60} >
         {items.map((item, index) => (
           <div
