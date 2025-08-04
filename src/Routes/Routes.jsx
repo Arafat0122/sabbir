@@ -24,6 +24,14 @@ const router = createBrowserRouter([
         element: <Services />
       },
       {
+        path: "/services/video-editing",
+        element: <Services />
+      },
+      {
+        path: "/services/web-development",
+        element: <Services />
+      },
+      {
         path: "/contact",
         element: <Contact />
       },

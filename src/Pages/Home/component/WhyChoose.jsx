@@ -12,58 +12,65 @@ const features = [
   {
     icon: Users,
     title: "Expert Team",
-    desc: "Our team of experienced professionals stays ahead of the curve with the digital marketing trends and best practices.",
+    desc: "Our experienced team stays ahead of digital trends and implements best practices for every project.",
   },
   {
     icon: PenTool,
     title: "Customized Strategies",
-    desc: "We understand that every business is unique. Our tailored strategies are designed to meet specific goals needs.",
+    desc: "Every business is unique. We craft tailored strategies aligned with your specific goals and brand voice.",
   },
   {
     icon: CheckCircle,
     title: "Proven Results",
-    desc: "We have a track record of delivering measurable results, helping businesses grow their online presence.",
+    desc: "We consistently deliver measurable outcomes, helping brands grow their visibility and impact.",
   },
   {
     icon: FileText,
     title: "Transparent Reporting",
-    desc: "We believe in transparency and keep you informed with regular reports and insights into your campaign performance.",
+    desc: "You’ll always know what’s happening — we provide clear, regular reports with actionable insights.",
   },
   {
     icon: User,
     title: "Client-Centric Approach",
-    desc: "Your success is priority. We work closely with you to understand your business and deliver solutions real impact.",
+    desc: "Your success is our priority. We partner closely to create content and strategies that truly work for you.",
   },
   {
     icon: RefreshCcw,
     title: "Latest Tools & Techniques",
-    desc: "Our team of experts leverages the latest tools and techniques to deliver results that matter.",
+    desc: "We harness the latest tools, trends, and platforms to stay ahead and give you a competitive edge.",
   },
 ];
 
 const WhyChoose = () => {
   return (
-    <section className="py-16 p-4 max-w-7xl mx-auto">
+    <section className="py-16 px-4 max-w-7xl mx-auto">
       <h6 className="text-primary font-semibold tracking-widest uppercase mb-2">
         Why Choose Us
       </h6>
-      <h3 className="text-2xl md:text-5xl font-bold mb-12 max-w-3xl text-blue-950 !leading-[1.2]">
-        Learn What Sets Us Apart In The World Of Digital Marketing
+      <h3 className="text-2xl md:text-5xl font-bold mb-12 max-w-4xl text-blue-950 !leading-[1.2]">
+        What Makes DigitalCrafted Your Ideal Creative Partner
       </h3>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-        {features.map(({ icon: Icon, title, desc }, i) => (
-          <div
-            key={i}
-            className="text-center p-8 rounded-lg shadow-sm border hover:shadow-md transition"
-          >
-            <div className="w-14 h-14 mx-auto flex items-center justify-center rounded-full bg-secondary mb-4">
-              <Icon className="text-white w-6 h-6" />
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        {features.map((feature, i) => {
+          const Icon = feature.icon;
+          return (
+            <div
+              key={i}
+              className="group bg-white text-center p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-all duration-300"
+            >
+              <div className="w-14 h-14 mx-auto flex items-center justify-center rounded-full bg-primary/90 text-white mb-5 transition group-hover:scale-110">
+                <Icon className="w-6 h-6" />
+              </div>
+              <h4 className="font-bold text-xl text-blue-900 mb-2">
+                {feature.title}
+              </h4>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                {feature.desc}
+              </p>
             </div>
-            <h3 className="font-bold text-xl text-blue-950 mb-2">{title}</h3>
-            <p className="text-gray-500 text-sm">{desc}</p>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </section>
   );
