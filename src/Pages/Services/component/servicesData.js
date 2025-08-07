@@ -18,7 +18,7 @@ const servicesData = [
     ],
     badge: { text: "Prime Services", color: "bg-purple-600" },
     icon: LuVideo, 
-    bgImage: "j.jpg",
+    bgImage: "https://cdn-icons-png.freepik.com/256/16907/16907552.png?semt=ais_white_label",
   },
   {
     title: "Content Creation",
@@ -30,7 +30,7 @@ const servicesData = [
     ],
     badge: { text: "Prime Services", color: "bg-purple-600" },
     icon: LuPalette,
-    bgImage: "j.jpg",
+    bgImage: "https://cdn-icons-png.flaticon.com/512/8070/8070177.png",
   },
   {
     title: "Business Growth Services",
@@ -42,7 +42,7 @@ const servicesData = [
     ],
     comingSoon: true,
     icon: LuRocket,
-    bgImage: "j.jpg",
+    bgImage: "https://cdn-icons-png.flaticon.com/512/7768/7768618.png",
   },
   {
     title: "Website Development",
@@ -54,7 +54,7 @@ const servicesData = [
     ],
     futureExpansion: true,
     icon: LuGlobe,
-    bgImage: "j.jpg",
+    bgImage: "https://cdn-icons-png.freepik.com/256/17365/17365478.png?semt=ais_white_label",
   },
   {
     title: "Graphics Design Services",
@@ -69,7 +69,7 @@ const servicesData = [
     ],
     badge: { text: "Prime Services", color: "bg-purple-600" },
     icon: LuPalette,
-    bgImage: "j.jpg",
+    bgImage: "https://cdn-icons-png.flaticon.com/512/6002/6002286.png",
   },
   {
     title: "App Development",
@@ -83,7 +83,7 @@ const servicesData = [
     ],
     badge: { text: "Prime Services", color: "bg-purple-600" },
     icon: LuMonitorSmartphone,
-    bgImage: "j.jpg",
+    bgImage: "https://cdn-icons-png.flaticon.com/512/9663/9663087.png",
   },
 ];
 

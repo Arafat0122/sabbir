@@ -35,9 +35,9 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
-        ? "bg-blue-950/90 backdrop-blur-lg shadow-md h-20"
-        : "bg-black/30 backdrop-blur-sm h-20"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-2 md:py-4 lg:py-2 ${scrolled
+        ? "bg-blue-950/90 backdrop-blur-lg shadow-md h-[55px] md:h-20"
+        : "bg-black/30 backdrop-blur-sm h-[55px] md:h-20"
         }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
