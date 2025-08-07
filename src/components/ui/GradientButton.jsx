@@ -19,7 +19,7 @@ export default function GradientButton({
     <button
       {...props}
       className={cn(
-        "inline-flex items-center gap-2 rounded-md px-6 py-3 font-medium transition-all duration-200",
+        " items-center gap-2 rounded-md px-6 py-3 font-medium transition-all duration-200 flex justify-center",
         variants[variant],
         className
       )}
